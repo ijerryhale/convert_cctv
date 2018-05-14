@@ -4,8 +4,8 @@
 //
 //  Created by Jerry Hale on 5/14/18.
 
-//	converts ".264" SD video files
-//	created by FDT 8903 PTZ camera
+//	convert ".264" SD video files
+//	from FDT 8903 PTZ camera
 //	into ".mp4" and ".wav" files
 //	http://fdt.us
 
