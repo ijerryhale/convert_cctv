@@ -53,6 +53,9 @@ int parse_ext(const struct dirent *dir)
 //	file and a ".wav" file
 int main(int ac, char **av)
 {
+	if (ac != 2)
+        exit(printf("use %s <directory> \n",av[0]));
+
 	struct	dirent **namelist;
 	int		n = scandir(av[1], &namelist, parse_ext, alphasort);
 
@@ -112,7 +115,7 @@ int main(int ac, char **av)
 				strcat(path, namelist[n]->d_name);
 				strcat(path, ".wav");
 
-				//	#define CREATE_WAV_FILE
+				#define CREATE_WAV_FILE
 			
 				#ifdef CREATE_WAV_FILE
 					FILE	*outa = fopen(path, "wb");
